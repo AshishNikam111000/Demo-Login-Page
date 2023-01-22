@@ -12,4 +12,4 @@ Demo login page. [Go to Website]
 [<img align="left" alt="GitHub" width="26px" src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" style="padding-right:10px;" />](https://sass-lang.com/)
 [<img align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" style="padding-right:10px;" />](https://github.com/)
 
-[Go to Website]: https://ashishnikam111000.github.io/Login-Page/
+[Go to Website]: https://ashishnikam111000.github.io/Demo-Login-Page/
