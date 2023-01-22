@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+$font: 'Josenfin Sans';
+$weight: 'Regular Roman';
+
+@mixin font-template($font-value, $weight-value, $size-value, $line-value, $letter-value, $color-value) {
+    font-family: $font-value;
+    font-weight: $weight-value;
+    font-size: $size-value;
+    line-height: $line-value;
+    letter-spacing: $letter-value;
+    color: $color-value;
+}
+
+.App {
+    position: relative;
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    .Background {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 15%;
+        width: 100%;
+        z-index: -10;
+
+        @media screen and (min-width: 768px) {
+            height: 20%;
+        }
+
+        @media screen and (min-width: 1040px) {
+            height: 30%;
+        }
+    }
+
+    .Container {
+        width: 70vw;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            width: 40vw;
+        }
+
+        @media screen and (min-width: 1040px) {
+            width: 30vw;
+        }
+
+        .Title {
+            @include font-template($font, $weight, 29px, 35px, 0px, #20B716);
+        }
+
+        .SignInBtn {
+            @include font-template($font, $weight, 19px, 23px, 0px, #FFFFFF);
+            width: 100%;
+            background: #20B716;
+        }
+
+        .ForgotBtn {
+            @include font-template($font, $weight, 14px, 18px, 0px, #000000);
+        }
+
+        .SignUpBtn {
+            @include font-template($font, $weight, 14px, 18px, 0px, #D9185F);
+        }
+
+        .OR {
+            @include font-template($font, $weight, 16px, 19px, 0px, #000000);
+        }
+
+        .Amazon {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 7px #00000029;
+            border-radius: 6px 6px 0px 0px;
+            width: 100%;
+        }
+
+        .Google {
+            @include font-template($font, 'SemiBold Roman', 14px, 18px, 0px, #FFFFFF);
+            background-color: #4285F4;
+        }
+
+        .Facebook {
+            @include font-template($font, 'SemiBold Roman', 14px, 18px, 0px, #FFFFFF);
+            background-color: #1877F2;
+        }
+
+        .BtnText {
+            width: 100%;
+        }
+
+        .InputField {
+            border-bottom: 2px solid #E2E8F0;
+
+            &::placeholder {
+                @include font-template($font, $weight, 16px, 19px, 0px, #20B716);
+            }
+        }
+
+        .Required {
+            display: none;
+            width: 100%;
+            @include font-template('Myriad Pro', 'Regular', 13px, 19px, 0px, #EE2D6E);
+
+            img {
+                width: 5%;
+                height: 5%;
+            }
+
+            div {
+                width: 100%;
+            }
+        }
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    }
+}
